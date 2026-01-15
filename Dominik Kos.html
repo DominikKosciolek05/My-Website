@@ -7,6 +7,147 @@
 
   <!-- Link to external CSS -->
   <link rel="stylesheet" href="style.css" />
+  <styles>
+    /* =========================
+   COLOUR PALETTE
+   ========================= */
+:root {
+  --bg-main: #EFE3C8;
+  --bg-card: #F6EEDB;
+  --gold-main: #D4A437;
+  --gold-accent: #E0B85C;
+  --purple-main: #6B2A7A;
+  --purple-dark: #4A2C5F;
+  --text-main: #6A5B3E;
+  --text-muted: #9B8B73;
+}
+
+/* =========================
+   BASE STYLES
+   ========================= */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+section {
+  padding: 4rem 10%;
+}
+
+h1, h2, h3 {
+  color: var(--purple-dark);
+}
+
+a {
+  color: var(--purple-main);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--gold-main);
+}
+
+/* =========================
+   NAVIGATION
+   ========================= */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 10%;
+  position: sticky;
+  top: 0;
+  background-color: var(--bg-main);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* =========================
+   HERO
+   ========================= */
+.hero {
+  text-align: center;
+  padding: 6rem 10%;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 1.5rem auto;
+  color: var(--text-muted);
+}
+
+.hero button {
+  background-color: var(--gold-main);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+}
+
+/* =========================
+   PROJECTS
+   ========================= */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: var(--bg-card);
+  padding: 2rem;
+}
+
+/* =========================
+   AUDIO PLACEHOLDER
+   ========================= */
+.audio-placeholder {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--gold-accent);
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* =========================
+   ABOUT & CONTACT
+   ========================= */
+.about {
+  max-width: 800px;
+}
+
+.contact {
+  text-align: center;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+  </styles>
 </head>
 
 <body>
